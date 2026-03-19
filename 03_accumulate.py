@@ -16,7 +16,7 @@ def total(lst):
     """Return the sum of all floats in lst."""
     result = 0
     for item in lst:
-        pass  # add item to result
+        result += float(item)
     return result
 
 
@@ -28,7 +28,7 @@ def join_with_dash(lst):
     """
     result = ""
     for item in lst:
-        pass  # append a dash and the item to result
+        result += "-" + item
     return result[1:]  # remove the leading dash
 
 
