@@ -12,7 +12,7 @@ def double_all(lst):
     """Return a new list where every integer is doubled."""
     result = []
     for item in lst:
-        pass  # append the doubled item to result
+        result.append(item*2)
     return result
 
 
@@ -20,7 +20,7 @@ def shout_all(lst):
     """Return a new list where every string is uppercased."""
     result = []
     for item in lst:
-        pass  # append the uppercased item to result
+        result.append(item.upper())
     return result
 
 
