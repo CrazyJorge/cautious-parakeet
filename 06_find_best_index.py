@@ -19,7 +19,8 @@ def max_index(lst):
     """Return the index of the largest integer in lst."""
     best_idx = 0
     for idx, item in enumerate(lst):
-        pass  # if item beats lst[best_idx], update best_idx
+        if int(item) > lst[int(best_idx)]:
+            best_idx = idx
     return best_idx
 
 
@@ -27,7 +28,8 @@ def min_index(lst):
     """Return the index of the smallest string in lst."""
     best_idx = 0
     for idx, item in enumerate(lst):
-        pass  # if item beats lst[best_idx], update best_idx
+        if str(item) < lst[(best_idx)]:
+            best_idx = idx
     return best_idx
 
 
