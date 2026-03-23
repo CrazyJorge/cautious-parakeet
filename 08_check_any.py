@@ -19,14 +19,16 @@
 def any_negative(lst):
     """Return True if at least one integer in lst is negative."""
     for item in lst:
-        pass  # if item meets the condition, return True now
+        if item < 0:
+            return True
     return False
 
 
 def any_upper(lst):
     """Return True if at least one string in lst is fully uppercase."""
     for word in lst:
-        pass  # if word meets the condition, return True now
+        if word == word.upper():
+            return True
     return False
 
 
