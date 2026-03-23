@@ -18,14 +18,16 @@
 def all_positive(lst):
     """Return True if every integer in lst is greater than zero."""
     for item in lst:
-        pass  # if item fails the condition, return False now
+        if item <= 0:
+            return False
     return True
 
 
 def all_short(lst):
     """Return True if every string in lst has length <= 3."""
     for word in lst:
-        pass  # if word fails the condition, return False now
+        if len(word) > 3:
+            return False
     return True
 
 
