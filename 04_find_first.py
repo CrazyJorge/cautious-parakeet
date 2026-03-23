@@ -16,14 +16,16 @@
 def first_negative(lst):
     """Return the first negative integer, or None if there isn't one."""
     for item in lst:
-        pass  # if item is negative, return it right now
+        if item < 0:
+            return item
     return None
 
 
 def first_long(lst):
     """Return the first string longer than 4 characters, or None."""
     for word in lst:
-        pass  # if word is long enough, return it right now
+        if len(word) > 4:
+            return word
     return None
 
 
